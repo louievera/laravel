@@ -7,16 +7,16 @@
       <input type='text' id="product" name="product_name" class="form-control" value='{{isset($product) ? $product->product_name : "" }}'>
 
       <label for="price">Price</label>
-      <input type="text" id="price" name="price" class="form-control" value='{{isset($product) ? $product->price : "" }}'>
+      <input type="number" id="price" name="price" class="form-control" value='{{isset($product) ? $product->price : "" }}'>
 
       <label for="quantity">Quantity</label>
-      <input type="text" id="quantity" name="quantity" class="form-control" value='{{isset($product) ? $product->quantity : "" }}'>
+      <input type="number" id="quantity" name="quantity" class="form-control" value='{{isset($product) ? $product->quantity : "" }}'>
 
       <label for="size">Size</label>
-      <input type="text" id="size" name="size" class="form-control" value='{{isset($product) ? $product->size : "" }}'>
+      <input type="number" id="size" name="size" class="form-control" value='{{isset($product) ? $product->size : "" }}'>
 
       <label for="code">Code</label>
-      <input type="text" id="code" name="code" class="form-control" value='{{isset($product) ? $product->unique_code : "" }}'>
+      <input type="number" id="code" name="code" class="form-control" value='{{isset($product) ? $product->unique_code : "" }}'>
 
       <input type="hidden" name="_token" value="{{csrf_token()}}">
 
